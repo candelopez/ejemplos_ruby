@@ -28,4 +28,18 @@ frase=gets.chomp
 puts "ADIÓS HIJITO"
 end
 
-puts abuela
+
+def lista_ordenada
+	puts "Ingrese palabras"
+	palabra=gets.chomp
+	lista=[]
+	while palabra != ""
+		lista.push palabra
+		palabra=gets.chomp
+	end
+
+	puts lista.sort
+
+end
+
+puts lista_ordenada
